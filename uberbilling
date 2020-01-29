@@ -1,0 +1,20 @@
+a= int(input('1. Bike\n2. Auto\n3. Car\n\nEnter your choice: '))
+
+bikefare = 15
+autofare = 20
+carfare = 35
+
+km = int(input('Enter the distance travelled in km: '))
+
+fare = 0
+
+if a == 1:
+    fare = km * bikefare
+elif a == 2:
+    fare = km * autofare
+elif a == 3:
+    fare = km * carfare
+else:
+    print('Invalid option')
+    
+print('Your fare is ', fare)
